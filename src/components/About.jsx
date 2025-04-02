@@ -2,10 +2,9 @@ import React from "react";
 import Typewriter from "./Typewriter";
 
 import Carousel from "./Carousel";
-import imdb from "/imdb.png"
-import {  Mail,Phone} from "lucide-react";
+import imdb from "/imdb.png";
+import { Mail, Phone } from "lucide-react";
 export default function About() {
-
   return (
     <>
       <section className="bg-base-200">
@@ -19,27 +18,36 @@ export default function About() {
               every vision to life.
             </p>
             <p>Find Me On : </p>
-            <div className="flex p-4 space-x-14">
-            <div className="pt-5 space-y-6">
-              <div className="flex gap-4 items-center">
-                <div className="flex bg-blue-600/30 h-10 justify-center rounded-lg w-10 items-center">
-                  <Phone className="h-4 w-4" />
-                </div>
-                <span className="font-normal">+91 9004064315</span>
-              </div>
 
-              <div className="flex gap-4 items-center">
-                <div className="flex bg-blue-600/30 h-10 justify-center rounded-lg w-10 items-center">
-                  <Mail className="h-4 w-4" />
+            <div className="flex flex-col sm:flex-row p-4 sm:space-x-14">
+              <div className="pt-5 space-y-6">
+                <div className="flex gap-4 items-center">
+                  <div className="flex bg-blue-600/30 h-10 justify-center rounded-lg w-10 items-center">
+                    <Phone className="h-4 w-4" />
+                  </div>
+                  <span className="font-normal">+91 9004064315</span>
                 </div>
-                <span className="font-normal">vickky20j@gmail.com</span>
+                <div className="flex gap-4 items-center">
+                  <div className="flex bg-blue-600/30 h-10 justify-center rounded-lg w-10 items-center">
+                    <Mail className="h-4 w-4" />
+                  </div>
+                  <span className="font-normal">vickky20j@gmail.com</span>
+                </div>
+              </div>
+              <div className="flex items-center justify-around mt-6 sm:mt-0 ">
+                <a
+                  href="https://www.imdb.com/name/nm12972853/?ref_=ext_shr"
+                  target="_blank"
+                >
+                  <img
+                    src={imdb}
+                    className=" hover:scale-110 w-[80px] sm:w-[120px] h-auto"
+                    alt="IMDB Profile"
+                  />
+                </a>
+               
               </div>
             </div>
-            <div>
-              <a href="https://www.imdb.com/name/nm12972853/?ref_=ext_shr" target="_blank"><img src={imdb} className="hover:scale-110" alt="" height={120} width={120}/></a>
-            </div>
-            </div>
-
           </div>
           <div className="rounded-xl lg:col-span-5 lg:mt-0 mt-4 overflow-hidden">
             <Carousel />
