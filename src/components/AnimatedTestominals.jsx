@@ -32,7 +32,7 @@ export const AnimatedTestimonials = ({ autoplay = true }) => {
   return (
     <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-12">
       {/* Title */}
-      <h2 className="text-3xl font-bold text-center text-black dark:text-white mb-10">
+      <h2 className="text-3xl font-bold text-center text-white">
         What My Snaps Say
       </h2>
 
@@ -101,7 +101,7 @@ export const AnimatedTestimonials = ({ autoplay = true }) => {
               duration: 0.2,
               ease: "easeInOut",
             }}>
-            <h3 className="text-2xl font-bold dark:text-white text-black">
+            <h3 className="text-2xl font-bold text-white">
               {squareImages[active].title}
             </h3>
             {/* <p className="text-sm text-gray-500 dark:text-neutral-500">
