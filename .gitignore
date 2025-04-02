@@ -24,18 +24,3 @@ dist-ssr
 *.sln
 *.sw?
 
-# Large media files
-src/assets/img/ArtHouse/**
-src/assets/img/collage/**
-src/assets/video/**
-*.mp4
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.webp
-*.avif
-
-# Keep specific images
-!public/logo1.png
-!src/assets/img/about/*.png
