@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import finishedLogo from "../assets/img/about/logo4.png";
+import finishedLogo from "/logo4.png";
 
 export default function Header() {
   // Function to close the drawer only on mobile

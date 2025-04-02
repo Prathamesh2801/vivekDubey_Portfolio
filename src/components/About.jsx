@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "./Typewriter";
 
 import Carousel from "./Carousel";
-import imdb from '../assets/img/about/imdb.png'
+import imdb from "/imdb.png"
 import {  Mail,Phone} from "lucide-react";
 export default function About() {
 
