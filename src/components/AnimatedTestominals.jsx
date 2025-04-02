@@ -32,12 +32,12 @@ export const AnimatedTestimonials = ({ autoplay = true }) => {
   return (
     <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-12">
       {/* Title */}
-      <h2 className="text-3xl font-bold text-center text-white">
+      <h2 className="text-3xl  mb-10 font-bold text-center text-white">
         What My Snaps Say
       </h2>
 
       {/* Testimonial Component */}
-      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
@@ -70,7 +70,7 @@ export const AnimatedTestimonials = ({ autoplay = true }) => {
                     duration: 0.4,
                     ease: "easeInOut",
                   }}
-                  className="absolute inset-0 origin-bottom">
+                  className="absolute inset-0 origin-bottom ">
                   <img
                     src={image.img} // Replace this with the correct image URL if not using nextImage
                     alt={image.title}
@@ -107,7 +107,7 @@ export const AnimatedTestimonials = ({ autoplay = true }) => {
             {/* <p className="text-sm text-gray-500 dark:text-neutral-500">
               {squareImages[active].desc}
             </p> */}
-            <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
+            <motion.p className="text-lg text-gray-500 mt-4 dark:text-neutral-300">
               {squareImages[active].desc.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
