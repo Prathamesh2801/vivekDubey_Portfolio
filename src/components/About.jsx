@@ -43,6 +43,7 @@ export default function About() {
                     src={imdb}
                     className=" hover:scale-110 w-[80px] sm:w-[120px] h-auto"
                     alt="IMDB Profile"
+                   
                   />
                 </a>
                

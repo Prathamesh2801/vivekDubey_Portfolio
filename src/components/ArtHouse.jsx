@@ -7,6 +7,7 @@ import {
 } from "../assets/data/artHousedata.js";
 import { images } from "../assets/data/masonryImages.js";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { AnimatedTestimonials } from "./AnimatedTestominals.jsx";
 
 
 const ImageGrid = ({ title, images, aspectRatio }) => (
@@ -79,11 +80,7 @@ export default function ArtHouse() {
         aspectRatio="aspect-[16/9]"
       />
 
-      <ImageGrid
-        title="Frame Perfect"
-        images={squareImages}
-        aspectRatio="aspect-square"
-      />
+     <AnimatedTestimonials/>
 
       <ImageGrid
         title="Vertical Visions"
